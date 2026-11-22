@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Glowing lantern">
+  <defs>
+    <radialGradient id="halo" cx="50%" cy="56%" r="50%">
+      <stop offset="0" stop-color="#FFD98A" stop-opacity=".95"/>
+      <stop offset=".45" stop-color="#F7B955" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#F7B955" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF8E8"/>
+      <stop offset=".55" stop-color="#FFE6B3"/>
+      <stop offset="1" stop-color="#FFD089"/>
+    </linearGradient>
+    <radialGradient id="inner" cx="50%" cy="58%" r="55%">
+      <stop offset="0" stop-color="#FFF3C9"/>
+      <stop offset=".6" stop-color="#FFC86A" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#FFC86A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="flame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE27A"/>
+      <stop offset=".6" stop-color="#FFA23A"/>
+      <stop offset="1" stop-color="#F0703A"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2C5282"/>
+      <stop offset="1" stop-color="#1E3A5F"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="200" cy="228" r="178" fill="url(#halo)"/>
+
+  <!-- handle -->
+  <circle cx="200" cy="46" r="20" fill="none" stroke="#1E3A5F" stroke-width="8"/>
+  <rect x="192" y="62" width="16" height="16" rx="4" fill="#1E3A5F"/>
+
+  <!-- roof -->
+  <path d="M200 74 L276 134 L124 134 Z" fill="url(#metal)"/>
+  <path d="M200 74 L232 99" stroke="#ffffff" stroke-opacity=".25" stroke-width="5" stroke-linecap="round"/>
+  <rect x="114" y="132" width="172" height="18" rx="9" fill="#1E3A5F"/>
+
+  <!-- glass body -->
+  <rect x="136" y="150" width="128" height="150" rx="20" fill="url(#glass)" stroke="#1E3A5F" stroke-width="7"/>
+  <rect x="140" y="154" width="120" height="142" rx="17" fill="url(#inner)"/>
+
+  <!-- frame bars -->
+  <line x1="170" y1="153" x2="170" y2="297" stroke="#1E3A5F" stroke-opacity=".18" stroke-width="4"/>
+  <line x1="230" y1="153" x2="230" y2="297" stroke="#1E3A5F" stroke-opacity=".18" stroke-width="4"/>
+
+  <!-- flame -->
+  <path d="M200 186 C224 216 232 244 214 268 C206 279 194 279 186 268 C168 244 176 216 200 186 Z" fill="url(#flame)"/>
+  <path d="M200 222 C211 238 213 252 205 262 C202 266 198 266 195 262 C187 252 189 238 200 222 Z" fill="#FFF6D6"/>
+  <rect x="196" y="270" width="8" height="18" rx="3" fill="#1E3A5F" opacity=".7"/>
+
+  <!-- glass highlight -->
+  <path d="M152 172 Q146 210 152 262" fill="none" stroke="#ffffff" stroke-opacity=".75" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- base -->
+  <rect x="122" y="298" width="156" height="20" rx="10" fill="#1E3A5F"/>
+  <rect x="150" y="318" width="100" height="16" rx="8" fill="#16304F"/>
+
+  <!-- sparkles -->
+  <g fill="#FFFFFF">
+    <path d="M318 150 l5 12 12 5 -12 5 -5 12 -5 -12 -12 -5 12 -5 z" opacity=".9"/>
+    <path d="M86 230 l4 9 9 4 -9 4 -4 9 -4 -9 -9 -4 9 -4 z" opacity=".8"/>
+    <path d="M300 300 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3 z" opacity=".7"/>
+  </g>
+</svg>
